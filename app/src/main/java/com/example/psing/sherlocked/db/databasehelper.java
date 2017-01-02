@@ -17,9 +17,9 @@ public class databasehelper extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-        String createTable = "CREATE TABLE " + tablename + " ( " +
-                col1 + " INTEGER PRIMARY KEY AUTOINCREMENT, " +
-                col2 + " TEXT NOT NULL);";
+        String createTable = "create table " + tablename + "(" +
+                col1 + " INTEGER PRIMARY KEY AUTOINCREMENT," +
+                col2 + " TEXT NOT NULL)";
 
         db.execSQL(createTable);    }
 
